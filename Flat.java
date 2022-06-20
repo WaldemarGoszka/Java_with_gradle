@@ -4,6 +4,10 @@ public class Flat extends Bulding {
     public int noOfRomms = 5;
     public String name  = "woronicza";
 
+    public Flat() {
+        ;
+    }
+
     public static void main(String[] args) {
         Flat flal = new Flat();
 
