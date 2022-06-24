@@ -11,4 +11,5 @@ public class Ostrich implements Animal{
     public void run() {
         System.out.println("Ostrich run");
     }
+
 }
