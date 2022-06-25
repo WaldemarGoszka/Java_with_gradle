@@ -12,15 +12,11 @@ public class Main {
 //        System.out.println("---");
 //        accept(new Flat());
 //        method();
-Animal animal = new Animal("amjnal");
-Labrador labrador = new Labrador();
+//Animal animal = new Animal("amjnal");
+//Labrador labrador = new Labrador();
 
     }
-public static void accept(Bulding obj){
-        obj.print();
-}
-final static String method (){
-        return null;
-}
+
+
 
 }
