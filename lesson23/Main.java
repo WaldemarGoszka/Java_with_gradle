@@ -6,6 +6,8 @@ public class Main {
         Cat cat = (Cat) animal;
         Animal animal1 = new Animal();
         cat.prnt();
+        Quiz quiz = new Quiz();
+        quiz.
     }
 
 
