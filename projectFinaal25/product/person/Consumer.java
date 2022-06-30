@@ -1,6 +1,6 @@
-package person;
+package projectFinaal25.product.person;
 
-import product.Food;
+import projectFinaal25.product.Food;
 
 public class Consumer extends Person{
     public Consumer(String name, String surname) {

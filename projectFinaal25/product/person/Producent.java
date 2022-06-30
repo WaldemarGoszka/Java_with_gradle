@@ -1,9 +1,9 @@
-package person;
+package projectFinaal25.product.person;
 
-import product.Chocolate;
-import product.Food;
-import product.Sandwich;
-import product.Soup;
+import projectFinaal25.product.Chocolate;
+import projectFinaal25.product.Food;
+import projectFinaal25.product.Sandwich;
+import projectFinaal25.product.Soup;
 
 public class Producent extends Person implements ProducingMan{
     public Producent(String name, String surname) {

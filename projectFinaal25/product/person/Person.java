@@ -1,4 +1,4 @@
-package person;
+package projectFinaal25.product.person;
 
 abstract public class Person implements ConsumingMan {
 

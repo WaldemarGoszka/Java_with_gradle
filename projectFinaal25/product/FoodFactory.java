@@ -1,9 +1,9 @@
-import person.Consumer
-import person.ConsumingMan;
-import person.Producent;
-import person.ProducingMan;
+package projectFinaal25.product;
 
-import java.util.function.Consumer;
+import projectFinaal25.product.person.Consumer;
+import projectFinaal25.product.person.ConsumingMan;
+import projectFinaal25.product.person.Producent;
+import projectFinaal25.product.person.ProducingMan;
 
 public class FoodFactory {
     public static void main(String[] args) {
@@ -20,6 +20,10 @@ foodFactory.run();
             new Consumer("Rafal", "Pożracz"),
             new Consumer("Angelika","Zajadacz"),
         };
+        for (ProducingMan producingPerson:producingPeople
+             ) {
+            
+        }
 
     }
 }
