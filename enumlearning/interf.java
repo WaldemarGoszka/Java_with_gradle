@@ -10,11 +10,11 @@ public class interf {
 
         sad += "n";
     }
-    ps
+
     public static void main(String[] args) {
         System.out.println(interf.sad);
         System.out.println(interf.sad);
-        new interf().sad;
+//        new interf().sad;
 
         System.out.println(interf.sad);
     }

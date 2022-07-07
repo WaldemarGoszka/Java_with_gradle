@@ -9,7 +9,7 @@ public class Driver {
 
     public void setAge(int age) {
         if (age < 18) {
-            throw new DrivingException("is not 18")
+//            throw new DrivingException("is not 18");
         }
         this.age = age;
     }
