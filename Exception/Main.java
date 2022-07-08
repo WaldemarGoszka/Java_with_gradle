@@ -1,5 +1,9 @@
 package Exception;
 
+
+import java.util.LinkedList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 //        String abc  = "123";
@@ -22,6 +26,7 @@ public class Main {
             System.out.println("seven");
             throw new RuntimeException("eight");
         }
-
+        List<String> listOfString = new LinkedList<>();
+        listOfString.ad
 }}
 
