@@ -28,5 +28,6 @@ public class Main {
         }
         List<String> listOfString = new LinkedList<>();
         listOfString.ad
+                List.Of("");
 }}
 
