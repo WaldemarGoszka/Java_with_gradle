@@ -26,8 +26,6 @@ public class Main {
             System.out.println("seven");
             throw new RuntimeException("eight");
         }
-        List<String> listOfString = new LinkedList<>();
-        listOfString.ad
-                List.Of("");
+
 }}
 
