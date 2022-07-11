@@ -42,7 +42,7 @@ public class Main {
         System.out.println(someList1);
 
         String[] listtoarray = someList1.toArray(new String[0]);
-        System.out.println(Arrays.toString(listtoarray));
+        System.out.println(Arrays.toString(listtoarray)) ;
 
     }
 
