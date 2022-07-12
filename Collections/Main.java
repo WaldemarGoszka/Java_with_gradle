@@ -38,7 +38,7 @@ public class Main {
         String[] someArray = {"1", "2","3"};
         List<String> someList1 = Arrays.asList(someArray); // metoda as List nie wpiera dodawania elementóew do listy więc nie możemu wywołać add
         List<String> someList2 = new ArrayList<>(Arrays.asList(someArray)); // tu już będzie dzisłąć add
-        System.out.println(Arrays.toString(someArray));
+        System.out.println(Arrays.toString(someArray  ));
         System.out.println(someList1);
 
         String[] listtoarray = someList1.toArray(new String[0]);
