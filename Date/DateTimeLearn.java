@@ -1,9 +1,6 @@
 package Date;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
 import java.util.Arrays;
 
 public class DateTimeLearn {
@@ -17,6 +14,14 @@ public class DateTimeLearn {
         System.out.println(Arrays.toString(Month.values()));
         LocalDate ld = LocalDate.now();
 
+        System.out.println();
+
+        System.out.println(OffsetDateTime.now());
+        System.out.println(OffsetDateTime.now(ZoneId.of("UTC")));
+        System.out.println(OffsetDateTime.now(ZoneOffset.UTC));
+        System.out.println(ZoneId.of("UTC"));
+        System.out.println(OffsetDateTime.of(2020, 5,3,5,5,5,5,ZoneOffset.UTC));
+        System.out.println(ZoneId.systemDefault());
     }
 
 }
