@@ -2,6 +2,7 @@ package Lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 
 public class LambdaExcesise {
@@ -19,7 +20,8 @@ public class LambdaExcesise {
         list.add("wars");
         list.removeIf( (String s) ->  s.contains("a")) ;
         LambdaInterface.run(10,11);
-
+        Optional<String> opt1 = Optional.of("1234");
+        opt1.
     }
 
 }
