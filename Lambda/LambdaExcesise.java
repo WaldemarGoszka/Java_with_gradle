@@ -19,9 +19,8 @@ public class LambdaExcesise {
         list.add("łisx");
         list.add("wars");
         list.removeIf( (String s) ->  s.contains("a")) ;
-        LambdaInterface.run(10,11);
         Optional<String> opt1 = Optional.of("12 34");
-        opt1.
+
     }
 
 }
