@@ -6,13 +6,13 @@ public class Book {
 
     public Book(int isbn, String author) {
         this.isbn = isbn;
-        this.author = author;
-    }
-
+        this.author = author;dfs                                dfs
+    }                                                  dfs
+                                                                   dfs
     public static void main(String[] args) {
-
+                                                                dfs
         Book[] Tab = new Book[3];
-//        Book book1 = new Book(1234,"Ogniem i Mieczem");
+//        Book book1 = new Book(1234,"Ogniem i Mieczem");      dfs
         Tab[0] = new Book(1234,"Ogniem i Mieczem");
 //        Book book2 =
         Tab[1] = new Book(2345, "Pan Tadeusz");

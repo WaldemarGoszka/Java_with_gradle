@@ -13,8 +13,8 @@ public class MainOptinal {
 //        System.out.println(adam.get().getName());
         if(adam.isPresent()) {
             System.out.println("asdasfas");
+            adam.ifPresent(a -> System.out.println(a.getName()));
         }
-        adam.ifPresent(a -> System.out.println(a.getName()));
         System.out.println("----");
         System.out.println(adam.orElse( odElseMethod()));
         System.out.println("----");
