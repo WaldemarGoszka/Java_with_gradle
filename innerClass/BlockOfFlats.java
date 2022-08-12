@@ -1,5 +1,6 @@
 package innerClass;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class BlockOfFlats {
@@ -10,5 +11,10 @@ public class BlockOfFlats {
     }
 
     public class Flat {
+        private BigDecimal aera;
+
+        public Flat(BigDecimal aera) {
+            this.aera = aera;
+        }
     }
 }
