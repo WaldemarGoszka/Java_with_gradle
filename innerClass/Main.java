@@ -7,6 +7,6 @@ import java.util.List;
 public class Main {
     flat = new Flat(BigDecimal.TEN);
     List<String> strings = new ArrayList<>()
-    BlockOfFlats.Flat flat = new BlockOfFlhlats(List.of(Fl
+    BlockOfFlats.Flat flat = new BlockOfFl hlats(List.of(Fl
             ats));
 }
