@@ -23,9 +23,9 @@ public class Cars {
         if(cabriolet instanceof Cabriolet){
             System.out.println("two");
         }
-        if(numb instanceof SUV){
-            System.out.println("three");
-        }
+//        if(numb instanceof SUV){
+//            System.out.println("three");
+//        }
         if(anotherCar instanceof SUV){
             System.out.println("four");
         }
