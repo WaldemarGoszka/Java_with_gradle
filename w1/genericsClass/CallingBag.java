@@ -9,6 +9,7 @@ public class CallingBag {
 
         Bag <Car> car = new Bag<>();
         car.pack(new Cabriolet()); // umożliwia zapakowanie Cabrioletu gdyż Cabriolet dziedziczy po Car
+        System.out.println();
     }
     static class Car{
 
