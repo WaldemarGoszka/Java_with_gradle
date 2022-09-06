@@ -20,6 +20,8 @@ public class Main {
         cats.add(new Cat(3, "Zbyszek"));
         cats.add(new Cat(2, "Rafał"));
         cats.add(new Cat(4, "Stefan"));
+        cats.add(new Cat(6, "Stefan"));
+        cats.add(new Cat(5, "Stefan"));
         System.out.println(cats);
 
 //        CatComparator catComparator = new CatComparator();
@@ -31,7 +33,14 @@ public class Main {
             public int compare(Cat o1, Cat o2) {
                 return o1.getId() - o2.getId();
             }
-        };
+        }.thenComparing(new Comparator<Cat>() {
+            @Override
+            public int compare(Cat o1, Cat o2) {
+                return o1.getId() - o2.getId();
+            }
+        });
+
+
         cats.sort(myFirstComparator);
         System.out.println(cats);
 
