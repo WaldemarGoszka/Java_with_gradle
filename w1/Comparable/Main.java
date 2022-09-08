@@ -1,10 +1,12 @@
 package w1.Comparable;
 
+import Lambda.LambdaInterface;
 import projectFinaal25.product.Soup;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +22,7 @@ public class Main {
         System.out.println(dogs);
         Collections.sort(dogs);
         System.out.println(dogs);
+        LambdaInterface
     }
 
 }
