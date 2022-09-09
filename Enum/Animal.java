@@ -1,4 +1,4 @@
-package enumlearning;
+package Enum;
 
 public enum Animal implements Voiceable{
     REINDEER("reinder",41123),

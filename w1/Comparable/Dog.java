@@ -4,6 +4,7 @@ public class Dog implements Comparable<Dog>{
     private Integer id;
     private String name;
 
+
     public Dog(Integer id, String name) {
         this.id = id;
         this.name = name;

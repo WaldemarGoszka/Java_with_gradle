@@ -1,4 +1,4 @@
-package enumlearning;
+package Enum;
 
 public class interf {
     public static String sad = "a";
