@@ -14,7 +14,7 @@ public enum Volkswagen {
 
     @Override
     public String toString() {
-        return "Volkswagen{" + this.name()+
+        return "Volkswagen{ " + this.name()+
                 "color='" + color + '\'' +
                 ", year=" + year +
                 '}';

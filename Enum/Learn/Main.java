@@ -21,6 +21,9 @@ public class Main {
         Volkswagen v2 = Volkswagen.GOLF;
         System.out.println(v1 == v2);
         System.out.println(Volkswagen.GOLF);
+
+        EnumExample enumExample = EnumExample.ANIMAL;
+        System.out.println(Arrays.toString(EnumExample.values()));
     }
 
 
