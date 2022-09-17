@@ -12,7 +12,7 @@ public class Main {
 
         List<? extends Animal> abc = monkeys;
         abc.add(new );
-//        List<? extends Animal> abc = new ArrayList<Dog>();
+//         List<? extends Animal> abc = new ArrayList<Dog>();
         print(animals);
         print(dogs);
         print(monkeys);
