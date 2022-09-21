@@ -13,11 +13,19 @@ public class Ex4 {
 
     }
 
-    static <T> void changeElement ( T[] ts ,int a, int b){
-        T temp = ts[a];
-        ts[a] = ts[b];
-        ts[b] = temp;
+    static <T> boolean changeElement ( T[] array ,int indexStart, int indexEnd){
+        if(indexStart == indexEnd ||
+        indexStart < 0 ||
+        indexEnd <0 ||
+        indexStart >= array.length ||
+        indexEnd >= array.length){
+            return false;
+        }
 
+        T temp = array[indexStart];
+        array[indexStart] = array[indexEnd];
+        array[indexEnd] = temp;
+        return true;
 
     }
 }

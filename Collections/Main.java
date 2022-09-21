@@ -3,7 +3,20 @@ package Collections;
 import java.util.*;
 
 public class Main {
+    private Object name;
+
+
+
+
+
     public static void main(String[] args) {
+        Set<Integer> integers = new TreeSet<>(Arrays.asList(1,57,4,3,9,0,22,443,5556,5,3,2,88,32,546,688,22,11,90,53,4-));
+        for (Integer integer : integers) {
+            System.out.print(integer + ",");
+        }
+        Map<Integer,String> map = new HashMap<>();
+        Set<Map.Entry<Integer, String>> entries = map.entrySet();
+
 //    new ArrayList
         List<String> namelist = new ArrayList<>();
         namelist.add("Karol");
