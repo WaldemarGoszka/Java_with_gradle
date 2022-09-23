@@ -1,15 +1,24 @@
 package Collections;
 
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    private Object name;
+    private Main name;
 
 
+    @Override
+    public String toString() {
+        return name.toString();
+    }
 
-
+    public Main(Main name) {
+        this.name = name;
+    }
 
     public static void main(String[] args) {
+
+        System.out.println("--------");
         Map<String,String> map3 = new HashMap<>(Map.of("1","2","3","4"));
         System.out.println(map3.get("5"));
 
