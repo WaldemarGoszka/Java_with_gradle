@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("--------");
+        System.out.println("------ --");
         Map<String,String> map3 = new HashMap<>(Map.of("1","2","3","4"));
         System.out.println(map3.get("5"));
 
