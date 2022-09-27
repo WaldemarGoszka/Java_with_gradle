@@ -13,6 +13,7 @@ public class DateTimeLearn {
         System.out.println(Month.AUGUST);
         System.out.println(Arrays.toString(Month.values()));
         LocalDate ld = LocalDate.now();
+        System.out.println("-------"+Month.JANUARY.ordinal());
 
         System.out.println();
 
