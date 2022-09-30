@@ -23,6 +23,12 @@ public class DateTimeLearn {
         System.out.println(ZoneId.of("UTC"));
         System.out.println(OffsetDateTime.of(2020, 5,3,5,5,5,5,ZoneOffset.UTC));
         System .out.println(ZoneId.systemDefault());
+
+        Duration duration = Duration.ofDays(1);
+        duration = duration.withSeconds(120);
+        System.out.println(duration);
+        Instant instant = Instant.now();
+        System.out.println(instant.getEpochSecond());
     }
 
 }
