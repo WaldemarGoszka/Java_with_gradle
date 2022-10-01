@@ -23,19 +23,18 @@ public class DateTimeLearn {
         System.out.println(ZoneId.of("UTC"));
         System.out.println(OffsetDateTime.of(2020, 5,3,5,5,5,5,ZoneOffset.UTC));
         System .out.println(ZoneId.systemDefault());
-<<<<<<< HEAD
+
 
         Duration duration = Duration.ofDays(1);
         duration = duration.withSeconds(120);
         System.out.println(duration);
         Instant instant = Instant.now();
         System.out.println(instant.getEpochSecond());
-=======
-        OffsetDateTime offsetDateTime = OffsetDateTime.parse("2022-09-29T15:58:43.914566100+02:00");
+
+        OffsetDateTime offsetDateTime = OffsetDateTime.parse("2022-09-29T15:58:43.914566100+03:00");
         System.out.println(offsetDateTime);
         LocalDateTime localDateTime = LocalDateTime.parse("2022-09-29 15:58:43.914566100");
         System.out.println(localDateTime);
->>>>>>> 70da438a5da405641580d9b3cc22c5f00d593783
     }
 
 }
