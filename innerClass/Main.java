@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Main {
      private String  pstr = "zajavka";
-    public static void main(String[] args) {
+    public static  void main(String[] args) {
         // inicjalizacja klasy wewnętrznej zwykłej, najpierw trzeba zainicjować klase gówną
         // a potem na referencji klase wewnętrzną
         BlockOfFlats blockOfFlats = new BlockOfFlats();
@@ -16,7 +16,16 @@ public class Main {
         System.out.println(flat);
         //inicjalizacja klasy statycznej wewnętrznej
 //        BlockOfFlats.Flat staticlass = new BlockOfFlats.StaticClass();
+        Animal animal = () -> null;
+        animal.run();
+    }
+    interface Animal{
 
+        String run();
+    }
+    abstract  class Cat{
+        public Cat() {
+        }
     }
 
 
