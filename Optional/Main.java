@@ -8,6 +8,6 @@ public class Main {
 
 //        Optional<String> str = Optional.of("SomeString");
         Optional<String> str = Optional.empty();
-        Optional<Boolean> me = str.map(a -> a.contains("mehh"));
+        Optional<Boolean> me = str.map(a -> a.contains("me hh"));
         System.out.println(me);
     }}
