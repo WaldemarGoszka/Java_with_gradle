@@ -7,8 +7,12 @@ import java.util.function.Supplier;
 
 public class Main2 {
     public static void main(String[] args) {
-        Inter2 predicate = Main2::run;
+        Inter2 predicate = a -> getRun(a);
         System.out.println(predicate);
+    }
+
+    private static void getRun(String a) {
+        run(a);
     }
 
     private static int getGgg() {
