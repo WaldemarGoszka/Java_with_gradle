@@ -14,7 +14,7 @@ public class MethodReference {
     private void run() {
         DogPrinter dogPrinter = new DogPrinter();
         Dog dog = new Dog("burek");
-        String someDog = Optional.of(dog).map(Dog::getName).orElse("some other Dog");
+        String someDog = Optional.of(dog).map(Dog::getName).orElse("some other  Dog");
         System.out.println(someDog);
         Optional.of(new Dog("next Burek")).ifPresent(dogPrinter::printDog);
 
@@ -26,5 +26,6 @@ public class MethodReference {
         System.out.println(dogs);
         Owner owner = new Owner();
         Dog dog1 = Optional.of(owner).map(Dog::new).orElse(new Dog(new Owner()));
+
     }
 }
