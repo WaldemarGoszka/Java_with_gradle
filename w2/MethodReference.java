@@ -30,9 +30,5 @@ public class MethodReference {
         Owner owner = new Owner();
         Dog dog1 = Optional.of(owner).map(Dog::new).orElse(new Dog(new Owner()));
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7d4e66991edc6c4c272bad125b65db68809cddf5
     }
 }
