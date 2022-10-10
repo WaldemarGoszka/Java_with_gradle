@@ -1,4 +1,4 @@
-package w2FunctionProgramingEx.Ex1;
+package w2.w2FunctionProgramingEx.Ex1;
 
 import java.util.function.BiFunction;
 

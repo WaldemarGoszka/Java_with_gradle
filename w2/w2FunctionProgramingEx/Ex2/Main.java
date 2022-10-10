@@ -1,6 +1,4 @@
-package w2FunctionProgramingEx.Ex2;
-
-import java.sql.SQLOutput;
+package w2.w2FunctionProgramingEx.Ex2;
 
 public class Main {
     public static void main(String[] args) {

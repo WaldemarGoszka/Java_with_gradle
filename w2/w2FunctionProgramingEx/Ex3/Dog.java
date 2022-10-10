@@ -1,4 +1,4 @@
-package w2FunctionProgramingEx.Ex3;
+package w2.w2FunctionProgramingEx.Ex3;
 
 public class Dog implements Comparable<Dog>{
     private final Integer size;

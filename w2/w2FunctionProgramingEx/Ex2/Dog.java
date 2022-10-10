@@ -1,4 +1,4 @@
-package w2FunctionProgramingEx.Ex2;
+package w2.w2FunctionProgramingEx.Ex2;
 
 public class Dog {
       private final String name;
