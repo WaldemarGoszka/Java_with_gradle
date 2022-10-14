@@ -14,7 +14,7 @@ public class MyConsumer {
 
     }
     public void methodFunction(Function<String> function){
-        function.apply("12346");
+        function.apply("123467");
 
     }
 }
