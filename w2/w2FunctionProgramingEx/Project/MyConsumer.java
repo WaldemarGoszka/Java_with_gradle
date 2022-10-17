@@ -13,8 +13,8 @@ public class MyConsumer {
         supplier.get();
 
     }
-    public void methodFunction(Function<String> function){
-        function.apply("1234678");
-
-    }
+//    public void methodFunction(Function<String> function,){
+//        function.apply("1234678");
+//
+//    }
 }
