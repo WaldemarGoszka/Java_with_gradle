@@ -8,7 +8,7 @@ public class Ex5 {
     public static void main(String[] args) {
         String str = "nieein";
         String noWhite = str.replace(" ", "");
-        System.out.println("IsPalindrom:" + isPalindrom(noWhite));
+        System.out.println("IsPalindrom :" + isPalindrom(noWhite));
     }
 
     private static Boolean isPalindrom(String noWhite) {
