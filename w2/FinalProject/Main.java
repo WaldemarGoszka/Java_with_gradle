@@ -59,7 +59,7 @@ public class Main {
                 .collect(Collectors.toMap(k -> k.getStatus(), v -> new ArrayList<>(List.of(v)), (l,r) -> {
                     l.addAll(r); return l;
                 }));
-        System.out.println("2.3: " + strifff);
+        System.out.println("2.3 : " + strifff);
     }
     static Map<String, Long> quantityOfBuyInCategory(List<Purchase> list , Product.Category category){
         return list.stream()
