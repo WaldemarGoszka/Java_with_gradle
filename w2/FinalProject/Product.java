@@ -56,4 +56,11 @@ public class Product implements Comparable<Product> {
         GARDEN,
         AUTOMOTIVE
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                '}';
+    }
 }

@@ -2,10 +2,7 @@ package w2.FinalProject;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -50,11 +47,25 @@ public class Main {
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.CLOTHES));
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.AUTOMOTIVE));
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.HOBBY));
+        System.out.println(quantityOfBuyInCategory(produce,Product.Category.GARDEN));
+
+        long count23 = produce.stream().
+                map(p -> new Purchase(p,OrderService.checkOrderStatus(p)))
+                .filter(p -> p.getStatus().equals(Purchase.Status.DONE))
+                .count();
+        System.out.println("2.3: " + count23);
+        var strifff = produce.stream()
+                .map(p -> new Purchase(p, OrderService.checkOrderStatus(p)))
+                .collect(Collectors.toMap(k -> k.getStatus(), v -> new ArrayList<>(List.of(v)), (l,r) -> {
+                    l.addAll(r); return l;
+                }));
+        System.out.println("2.3: " + strifff);
+    }
+    static Map<String, Long> quantityOfBuyInCategory(List<Purchase> list , Product.Category category){
+        return list.stream()
+                .filter(p -> category.equals(p.getProduct().getCategory()) && p.getQuantity() > 1)
+                .collect(Collectors.toMap(key -> key.getBuyer().getId(), value -> value.getQuantity(),(Long left, Long right) -> left + right));
 
     }
-    static Map<String, BigInteger> quantityOfBuyInCategory(List<Purchase> list , Product.Category category){
-        return list.stream()
-                .filter(p -> category.equals(p.getProduct().getCategory()))
-                .collect(Collectors.toMap(key -> key.getBuyer().getId(), value -> BigInteger.valueOf(value.getQuantity()),(left,right) -> left.add(right)));
-    }
+
 }
