@@ -53,7 +53,7 @@ public class Main {
                 map(p -> new Purchase(p,OrderService.checkOrderStatus(p)))
                 .filter(p -> p.getStatus().equals(Purchase.Status.DONE))
                 .count();
-        System.out.println("2.3: " + count23);
+        System.out.println("2.3 : " + count23);
         var strifff = produce.stream()
                 .map(p -> new Purchase(p, OrderService.checkOrderStatus(p)))
                 .collect(Collectors.toMap(k -> k.getStatus(), v -> new ArrayList<>(List.of(v)), (l,r) -> {
