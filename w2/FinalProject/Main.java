@@ -42,7 +42,7 @@ public class Main {
                 .collect(Collectors.toMap(key -> key.getBuyer().getId(), v ->
                         BigDecimal.valueOf(v.getQuantity()).multiply(v.getProduct().getPrice().getValue()), (left, right) -> left.add(right)));
         System.out.println("2.1" + collect);
-        System.out.println("2.2");
+        System.out.println("2.2 ");
 
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.CLOTHES));
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.AUTOMOTIVE));
