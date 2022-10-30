@@ -49,17 +49,27 @@ public class Main {
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.HOBBY));
         System.out.println(quantityOfBuyInCategory(produce,Product.Category.GARDEN));
 
-        long count23 = produce.stream().
+        long countOrderDone = produce.stream().
                 map(p -> new Purchase(p,OrderService.checkOrderStatus(p)))
                 .filter(p -> p.getStatus().equals(Purchase.Status.DONE))
                 .count();
-        System.out.println("2.3 : " + count23);
-        var strifff = produce.stream()
+        System.out.println("2.3 Order Done : " + countOrderDone);
+        var mapOrderStatus = produce.stream()
                 .map(p -> new Purchase(p, OrderService.checkOrderStatus(p)))
                 .collect(Collectors.toMap(k -> k.getStatus(), v -> new ArrayList<>(List.of(v)), (l,r) -> {
                     l.addAll(r); return l;
                 }));
-        System.out.println("2.3 : " + strifff);
+        System.out.println("2.3 Map Status: " + mapOrderStatus);
+
+        long countUniqueBuyerEUR = produce.stream()
+                .filter(p -> Money.Currency.EUR.equals(p.getProduct().getPrice().getCurrency()))
+                .map(p -> p.getBuyer())
+                .distinct()
+                .count();
+
+        System.out.println("2.4: " + countUniqueBuyerEUR);
+
+
     }
     static Map<String, Long> quantityOfBuyInCategory(List<Purchase> list , Product.Category category){
         return list.stream()
