@@ -29,6 +29,10 @@ public class Client implements Comparable<Client> {
         return id;
     }
 
+    public BigInteger getPesel() {
+        return pesel;
+    }
+
     @Override
     public int compareTo(final Client o) {
         return this.id.compareTo(o.id);

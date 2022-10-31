@@ -61,13 +61,25 @@ public class Main {
                 }));
         System.out.println("2.3 Map Status: " + mapOrderStatus);
 
-        long countUniqueBuyerEUR = produce.stream()
+        var UniquePurchasesEUR = produce.stream()
                 .filter(p -> Money.Currency.EUR.equals(p.getProduct().getPrice().getCurrency()))
-                .map(p -> p.getBuyer())
+                .collect(Collectors.toList());
+        Map<String, List<Purchase>> collect1 = UniquePurchasesEUR.stream().collect(Collectors.groupingBy(k -> k.getBuyer().getId()));
+
+
+        var countUniqueBuyerEUR = UniquePurchasesEUR.stream().map(p -> p.getBuyer())
                 .distinct()
                 .count();
 
-        System.out.println("2.4: " + countUniqueBuyerEUR);
+        System.out.println("2.4: " + countUniqueBuyerEUR + " * " + collect1);
+
+        Map<String, List<Product>> collect2 = produce.stream().
+                collect(Collectors.groupingBy(k -> k.getBuyer().getPesel().toString().substring(0, 2),
+                        TreeMap::new,Collectors.mapping(p -> p.getProduct(),Collectors.toList())));
+
+
+        System.out.println("2.5: "+ collect2);
+
 
 
     }
