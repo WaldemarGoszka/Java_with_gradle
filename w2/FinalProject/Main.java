@@ -71,7 +71,7 @@ public class Main {
                 .distinct()
                 .count();
 
-        System.out.println("2.4: " + countUniqueBuyerEUR + " * " + collect1);
+        System.out.println("2. 4: " + countUniqueBuyerEUR + " * " + collect1);
 
         Map<String, List<Product>> collect2 = produce.stream().
                 collect(Collectors.groupingBy(k -> k.getBuyer().getPesel().toString().substring(0, 2),
