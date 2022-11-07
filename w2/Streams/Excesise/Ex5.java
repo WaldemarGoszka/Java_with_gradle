@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Ex5 {
     public static void main(String[] args) {
-        String str = "nieeein";
+        String str = "nieeeeeein";
         String noWhite = str.replace(" ", "");
         System.out.println("IsPalindrom :" + isPalindrom(noWhite));
     }
