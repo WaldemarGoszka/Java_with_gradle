@@ -78,7 +78,7 @@ public class Main {
                         TreeMap::new,Collectors.mapping(p -> p.getProduct(),Collectors.toList())));
 
 
-        System.out.println("2.5 : "+ collect2);
+        System.out.println("2. 5  : "+ collect2);
 
 
 
