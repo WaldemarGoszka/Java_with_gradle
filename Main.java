@@ -1,11 +1,14 @@
 import java.util.Arrays;
 
-public class Main {
+public class Main implements Interface1{
     public static void main(String[] args ) {
-        int[] arr = {5,6,7};
-        System.out.println(arr);
+        Main main = new Main();
+        main.method2();
     }
 
 
+    @Override
+    public void stMethod() {
 
+    }
 }
