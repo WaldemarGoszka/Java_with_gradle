@@ -8,7 +8,7 @@ import java.nio.file.Path;
 
 public class e7 {
     public static void main(String[] args) {
-        example();
+        //example();
     }
     public static void example(Path path1, Path path2) {
         BufferedReader in = null;
