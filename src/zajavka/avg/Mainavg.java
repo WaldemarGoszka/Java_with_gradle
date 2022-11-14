@@ -9,7 +9,7 @@ public class Mainavg {
         array.add(5);
         array.add(7);
         array.add(8);
-        System.out.println("Srednia: " + avg(array));
+        System.out.println("Średnia : " + avg(array));
 
     }
         public static double avg(List<Integer> arrays){
