@@ -18,21 +18,34 @@ public class Main {
 //        zobacz przykładowe rozwiązanie i wykorzystanie metody Files.walk() zanim przejdziesz do
 //        kolejnych zadań.
     public static void main(String[] args) {
-        listSpecificFiles(Paths.get("src/zajavka/_warsztaty/w3/Exercises/One"), ".txt");
+        listSpecificFiles(Paths.get("src/zajavka/_warsztaty/w3/Exercises/One"), ".png");
+        System.out.println("Files.walk():");
+        try
+        {
+            Files.walk(Paths.get("src/zajavka/_warsztaty/w3/Exercises/One"))
+                    .filter(p -> Files.isRegularFile(p) && p.toString().contains(".png"))
+                    .forEach(System.out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static void listSpecificFiles(Path path, String ext) {
         try {
             Stream<Path> list = Files.list(path);
             list.forEach(p -> {
-                if(Files.isDirectory(p)){
-                    listSpecificFiles(p,ext);
-                } else if (Files.isRegularFile(p) && Files.getFileAttributeView().toString().contains(".txt")){
-                    System.out.println(p);
-                }
+                ifFileSpecificExtension(ext, p);
             });
         } catch (IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private static void ifFileSpecificExtension(String ext, Path p) {
+        if(Files.isDirectory(p)){
+            listSpecificFiles(p, ext);
+        } else if (Files.isRegularFile(p) && p.toString().contains(ext)){
+            System.out.println(p);
         }
     }
 
