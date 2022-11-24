@@ -13,4 +13,14 @@ public class Person {
         this.email = email;
         this.ipAddress = ipAddress;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", email='" + email + '\'' +
+                ", ipAddress='" + ipAddress + '\'' +
+                '}';
+    }
 }

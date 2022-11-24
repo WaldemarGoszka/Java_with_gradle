@@ -18,4 +18,16 @@ public class Car {
         this.modelYear = modelYear;
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "color='" + color + '\'' +
+                ", vin='" + vin + '\'' +
+                ", company='" + company + '\'' +
+                ", model='" + model + '\'' +
+                ", modelYear='" + modelYear + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
