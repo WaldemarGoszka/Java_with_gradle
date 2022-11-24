@@ -20,7 +20,7 @@ public class FileService {
             return purchases;
         } catch (IOException e) {
             throw new RuntimeException(e);
-            return Collections.emptyList();
+            //return Collections.emptyList();
         }
     }
 }
