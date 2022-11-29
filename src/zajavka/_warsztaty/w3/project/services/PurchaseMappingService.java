@@ -7,6 +7,7 @@ import zajavka._warsztaty.w3.project.domain.Purchase;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class PurchaseMappingService {
     public static Purchase newPurchase(String inputData){
@@ -31,5 +32,23 @@ public class PurchaseMappingService {
                 new Car(color,vin,company,model,modelYear,price),
                 new Location(country,city),
                 date);
+    }
+
+    public static String> newLine(Purchase purchase) {
+        String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
+                purchase.getId(),
+                purchase.getPerson().getFirstName(),
+                purchase.getPerson().getLastName(),
+                purchase.getPerson().getEmail(),
+                purchase.getIp_address(),
+                purchase.getColor(),
+                purchase.getCar_vin(),
+                purchase.getCar_company(),
+                purchase.getCar_model(),
+                purchase.getCar_model_year(),
+                purchase.getCar_price(),
+                purchase.getCountry(),
+                purchase.getCity(),
+                purchase.getDate)();
     }
 }

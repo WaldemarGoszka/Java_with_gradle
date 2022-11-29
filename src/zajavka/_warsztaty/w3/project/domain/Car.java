@@ -30,4 +30,28 @@ public class Car {
                 ", price=" + price +
                 '}';
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getVin() {
+        return vin;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getModelYear() {
+        return modelYear;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
 }
