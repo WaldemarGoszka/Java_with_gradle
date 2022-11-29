@@ -1,0 +1,39 @@
+id,first_name,last_name,email,ip_address,color,car_vin,car_company,car_model,car_model_year,car_price,country,city,date
+76,Ben,Yarwood,byarwood23@creativecommons.org,118.169.87.59,#ff6af6,WBA6B4C59DD511334,Nissan,300ZX,1991,12845.04,Poland,Borzęcin,2020-10-02
+82,Carlina,Sharma,csharma29@wsj.com,22.97.208.15,#744ef6,WAUJT68EX2A966932,Nissan,Altima,2003,36066.50,Poland,Łapanów,2020-02-16
+106,Chelsey,Kreuzer,ckreuzer2x@lycos.com,230.41.160.252,#f22c72,WVGEF9BP4FD544582,Nissan,Titan,2012,18572.45,Czech Republic,Čáslav,2020-04-07
+122,Enos,Kimmons,ekimmons3d@netscape.com,97.146.236.243,#80f590,WDDHF5KB9EA860967,Nissan,Sentra,2002,9821.53,Germany,Erfurt,2020-06-17
+133,Mauricio,Berzin,mberzin3o@wired.com,208.131.181.172,#3fa88c,WAUUL78E48A965531,Nissan,Cube,2012,53525.58,Germany,Chemnitz,2020-03-02
+146,Penny,Litzmann,plitzmann41@mapy.cz,8.218.144.184,#16d952,WAUDFAFL3AA370858,Nissan,Armada,2008,89173.53,Poland,Stoszowice,2020-10-02
+159,Kata,de Glanville,kdeglanville4e@jalbum.net,217.141.29.71,#68a98f,1GTC5LF9XC8889885,Nissan,Rogue,2010,45315.63,Denmark,København,2020-08-17
+198,Deeann,Hruska,dhruska5h@epa.gov,3.15.40.200,#7887f1,2C3CDYBT0EH160216,Nissan,Sentra,2009,5011.93,Poland,Strachówka,2020-03-10
+219,Julita,Davydochkin,jdavydochkin62@cnn.com,94.8.177.218,#cea04a,WDDHF0EB5EB909249,Nissan,Sentra,2005,80813.75,Germany,Leipzig,2020-12-29
+246,Emyle,Tathacott,etathacott6t@studiopress.com,90.189.143.41,#8aa2ef,WAUKFAFL2DA494969,Nissan,Maxima,2000,49132.44,Poland,Markowa,2020-10-10
+290,Yule,Woodier,ywoodier81@gizmodo.com,181.230.26.68,#e71412,WDDLJ6FB1FA422065,Nissan,Versa,2009,91895.71,Poland,Bieliny,2020-07-13
+396,Mic,Musker,mmuskeraz@friendfeed.com,251.130.189.20,#1edf4b,4T1BD1FK6CU327572,Nissan,Quest,1997,14566.11,Poland,Dolsk,2020-11-27
+416,Jennette,Agnew,jagnewbj@epa.gov,241.201.207.109,#10b773,1N6BF0KX3FN272455,Nissan,Pathfinder,1998,82779.06,Czech Republic,Hostavice,2020-12-16
+418,Silvan,Gearing,sgearingbl@desdev.cn,142.115.61.196,#deee1b,WDDEJ7GB4AA134398,Nissan,Altima,1996,21401.25,Poland,Raciąż,2020-11-27
+505,Raddy,Gerrelt,rgerrelte0@addtoany.com,109.175.0.64,#96317d,WBA1F5C56FV607357,Nissan,Xterra,2002,83887.99,Poland,Działdowo,2020-07-06
+538,Jereme,Heyward,jheywardex@hao123.com,200.177.128.150,#8378c9,3G5DA03L57S121587,Nissan,Altima,2002,97208.51,Czech Republic,Dolní Studénky,2020-05-02
+541,Deborah,Chessun,dchessunf0@shinystat.com,68.208.158.151,#8f9dba,1G4HC5EM3BU002416,Nissan,Datsun/Nissan Z-car,1990,65142.23,Poland,Psary,2020-05-27
+544,Rawley,Fryman,rfrymanf3@edublogs.org,247.204.75.243,#4b9010,WDDUG7GB5FA114193,Nissan,Maxima,1995,55147.67,Poland,Sokolniki,2020-07-26
+574,Alessandra,Cloke,aclokefx@slashdot.org,212.223.187.227,#48e196,5XXGM4A75EG929645,Nissan,Altima,2000,55524.45,Poland,Rudziczka,2020-01-09
+580,Ulrika,Wroughton,uwroughtong3@tuttocitta.it,141.163.147.147,#ce965e,WAUMR44E66N492420,Nissan,200SX,1998,41834.99,Czech Republic,Okrouhlice,2020-06-06
+616,Early,Fury,efuryh3@adobe.com,160.189.87.14,#9b18ac,WBA4A7C58FG184938,Nissan,Pathfinder Armada,2004,96775.20,Poland,Mosty,2020-02-24
+621,Nolana,Semonin,nsemoninh8@scribd.com,171.134.28.14,#2287d9,1G6DC8EY1B0437632,Nissan,Titan,2007,41050.28,Poland,Skrzydlna,2020-12-08
+624,Danica,Herion,dherionhb@google.es,237.229.127.126,#c92c1b,WAUAF78E48A769308,Nissan,Pathfinder,1998,60327.03,Denmark,Frederiksberg,2020-11-14
+714,Alexandra,Whitehorne,awhitehornejt@bravesites.com,37.60.232.254,#7a2163,WAUDK78T28A918435,Nissan,Quest,2012,4025.41,Poland,Wilkowice,2020-06-30
+751,Georgina,Darth,gdarthku@amazon.com,39.214.180.208,#6b88b1,4T1BF1FK7EU562107,Nissan,Datsun/Nissan Z-car,1990,88329.10,Poland,Piekoszów,2020-02-08
+778,Tarra,Lenglet,tlengletll@cbc.ca,19.250.195.211,#8dfad5,KMHCT4AE5EU157928,Nissan,Altima,1997,37540.55,Czech Republic,Lučina,2020-01-31
+816,Rickie,Cassey,rcasseymn@smh.com.au,96.24.231.41,#99f60c,2CTALMEC2B6053108,Nissan,300ZX,1995,84230.04,Czech Republic,Zásmuky,2020-08-23
+835,Helaina,Pinkie,hpinkien6@rediff.com,189.225.239.64,#6ac869,1FTWW3A5XAE602524,Nissan,Pathfinder,2009,96390.02,Poland,Moryń,2020-01-14
+852,Cesare,Loyndon,cloyndonnn@vimeo.com,38.50.54.89,#f06683,WAUAGAFD1EN016425,Nissan,Pathfinder,2001,25406.17,Czech Republic,České Meziříčí,2020-03-05
+887,Grissel,Rudall,grudallom@java.com,31.136.221.217,#052a83,3VW467ATXCM868684,Nissan,350Z,2003,39853.04,Poland,Gostyń,2020-02-21
+893,Arlinda,Pitkeathly,apitkeathlyos@forbes.com,177.233.232.169,#355fad,1GD422CGXEF710085,Nissan,Altima,2007,45725.23,Germany,Heilbronn,2020-08-03
+920,Joelynn,Crellin,jcrellinpj@amazon.de,42.196.103.227,#9bcf64,SCFEFBBC1AG391287,Nissan,Frontier,1998,20489.68,Czech Republic,Chrast,2020-07-06
+932,Woodman,Hallt,whalltpv@cargocollective.com,23.206.149.175,#045ec0,SCFAB01A27G820797,Nissan,Quest,2005,39077.60,Poland,Bardo,2020-02-14
+948,Ferrel,Eastmead,feastmeadqb@statcounter.com,197.196.86.29,#25425d,3N1AB6AP7CL224826,Nissan,Sentra,1993,85674.67,Poland,Grzmiąca,2020-06-28
+971,Vivianne,Boscher,vboscherqy@nationalgeographic.com,186.167.165.72,#15e946,WA1LKBFP8AA191325,Nissan,Altima,2002,97803.65,Poland,Knurów,2020-05-07
+976,Brooke,Ary,baryr3@rambler.ru,177.126.58.141,#a68aa5,3C4PDDAG6ET999823,Nissan,GT-R,2011,3222.64,Poland,Janowice,2020-06-05
+978,Alia,Bench,abenchr5@linkedin.com,253.54.252.141,#fb903e,WBANA53515B514097,Nissan,Pathfinder,2012,36887.35,Czech Republic,Moravská Třebová,2020-01-01
+985,Neile,Dany,ndanyrc@dion.ne.jp,37.212.164.245,#9a0f16,1G6KF57973U932155,Nissan,Xterra,2006,7004.45,Poland,Jawor,2020-12-17

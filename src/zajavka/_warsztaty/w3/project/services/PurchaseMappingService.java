@@ -7,7 +7,6 @@ import zajavka._warsztaty.w3.project.domain.Purchase;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.List;
 
 public class PurchaseMappingService {
     public static Purchase newPurchase(String inputData){
@@ -34,21 +33,21 @@ public class PurchaseMappingService {
                 date);
     }
 
-    public static String> newLine(Purchase purchase) {
-        String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
+    public static String toCsvRow(Purchase purchase) {
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
                 purchase.getId(),
                 purchase.getPerson().getFirstName(),
                 purchase.getPerson().getLastName(),
                 purchase.getPerson().getEmail(),
-                purchase.getIp_address(),
-                purchase.getColor(),
-                purchase.getCar_vin(),
-                purchase.getCar_company(),
-                purchase.getCar_model(),
-                purchase.getCar_model_year(),
-                purchase.getCar_price(),
-                purchase.getCountry(),
-                purchase.getCity(),
-                purchase.getDate)();
+                purchase.getPerson().getIpAddress(),
+                purchase.getCar().getColor(),
+                purchase.getCar().getVin(),
+                purchase.getCar().getCompany(),
+                purchase.getCar().getModel(),
+                purchase.getCar().getModelYear(),
+                purchase.getCar().getPrice(),
+                purchase.getLocation().getCountry(),
+                purchase.getLocation().getCity(),
+                purchase.getDate());
     }
 }

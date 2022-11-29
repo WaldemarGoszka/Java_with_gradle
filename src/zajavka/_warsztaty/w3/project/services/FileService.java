@@ -8,7 +8,9 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class FileService {
     public static List<Purchase> loadData(Path path) {
@@ -30,6 +32,11 @@ public class FileService {
 
     }
     public static void saveToFile (Path path, List<String> data, String header){
+        try {
+            Files.createDirectories(path.getParent());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         try(BufferedWriter writer = Files.newBufferedWriter(path,Charset.defaultCharset())) {
             writer.write(header);
             writer.newLine();
@@ -41,6 +48,31 @@ public class FileService {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+    public static void printSizeOfFiles(Path path){
+        try {
+            Stream<Path> list = Files.list(path);
+            list
+                    .sorted((p1,p2) -> (int)getSize(p2)-(int)getSize(p1))
+                    .forEach(s -> {
+                        try {
+                            System.out.println(s.getFileName().toString().replace("purchses-of-","")+Files.size(s));
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    });
 
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private static long getSize(Path p1) {
+        try {
+            return Files.size(p1);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
