@@ -6,10 +6,12 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Collections;
 import java.util.List;
 
 public class FileService {
     public static List<Purchase> loadData(Path path) {
+
         try {
             List<Purchase> purchases = Files.lines(path, Charset.defaultCharset())
                     .skip(1)
@@ -17,8 +19,9 @@ public class FileService {
                     .toList();
             return purchases;
         } catch (IOException e) {
-            throw new RuntimeException(e);
-            //return Collections.emptyList();
+            e.printStackTrace();
+            //throw new RuntimeException(e);
+            return Collections.emptyList();
         }
     }
 }
