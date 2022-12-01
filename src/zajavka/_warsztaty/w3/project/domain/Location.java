@@ -11,6 +11,14 @@ public class Location {
 
     }
 
+    public String getCountry() {
+        return country;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
     @Override
     public String toString() {
         return "Location{" +

@@ -1,0 +1,3 @@
+id,first_name,last_name,email,ip_address,color,car_vin,car_company,car_model,car_model_year,car_price,country,city,date
+775,Giusto,Kaygill,gkaygillli@telegraph.co.uk,219.150.26.162,#715f87,WAULC68E15A934576,Rolls-Royce,Phantom,2008,56285.59,Poland,Białołeka,2020-08-03
+990,Skyler,Kitteman,skittemanrh@prlog.org,71.6.225.239,#f02169,JN8AE2KP1C9709262,Rolls-Royce,Phantom,2006,92943.48,Poland,Kiełczów,2020-08-23

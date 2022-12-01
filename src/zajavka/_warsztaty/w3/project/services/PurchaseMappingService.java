@@ -32,4 +32,22 @@ public class PurchaseMappingService {
                 new Location(country,city),
                 date);
     }
+
+    public static String toCsvRow(Purchase purchase) {
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s",
+                purchase.getId(),
+                purchase.getPerson().getFirstName(),
+                purchase.getPerson().getLastName(),
+                purchase.getPerson().getEmail(),
+                purchase.getPerson().getIpAddress(),
+                purchase.getCar().getColor(),
+                purchase.getCar().getVin(),
+                purchase.getCar().getCompany(),
+                purchase.getCar().getModel(),
+                purchase.getCar().getModelYear(),
+                purchase.getCar().getPrice(),
+                purchase.getLocation().getCountry(),
+                purchase.getLocation().getCity(),
+                purchase.getDate());
+    }
 }
