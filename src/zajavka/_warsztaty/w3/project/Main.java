@@ -44,6 +44,8 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+//
 //        for (Map.Entry<Path, Long> pathLongEntry : listOfFiles.entrySet()) {
 //            System.out.println("Company: " +
 //                    pathLongEntry.getKey().toString()

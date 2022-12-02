@@ -8,10 +8,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
-<<<<<<< HEAD
-=======
-import java.util.Comparator;
->>>>>>> c89ffc745cb2d702d6b8afb9528b11608d755106
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -26,10 +22,6 @@ public class FileService {
             return purchases;
         } catch (IOException e) {
             e.printStackTrace();
-<<<<<<< HEAD
-            //throw new RuntimeException(e);
-            return Collections.emptyList();
-=======
             return Collections.emptyList();
         }
     }
@@ -81,7 +73,6 @@ public class FileService {
             return Files.size(p1);
         } catch (IOException e) {
             throw new RuntimeException(e);
->>>>>>> c89ffc745cb2d702d6b8afb9528b11608d755106
         }
     }
 }
