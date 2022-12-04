@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
         Path path = Paths.get("./src/zajavka/_warsztaty/w3/project/resources/37 client-car-purchase-spreadsheet.csv");
         List<Purchase> purchases = FileService.loadData(path);
-//        System.out.println(purchases);
+/////////        System.out.println(purchases);
 
         Map<String, List<Purchase>> purchaseGroupingByCompany = purchases.stream()
                 .collect(Collectors.groupingBy(p -> p.getCar().getCompany()));
