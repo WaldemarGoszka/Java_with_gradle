@@ -39,20 +39,14 @@ public class Main {
         //FileService.printSizeOfFiles(Paths.get("./src/zajavka/_warsztaty/w3/project/exported/ex2/"));
 
         try {
-            TreeMap<Path, ? extends Number> mapSizeByCompany = Files.list(Paths.get("./src/zajavka/_warsztaty/w3/project/exported/ex2/"))
+            TreeMap<String, ? extends Number> mapSizeByCompany = Files.list(Paths.get("./src/zajavka/_warsztaty/w3/project/exported/ex2/"))
                     .collect(Collectors.toMap(
-                            Path::getFileName,
-                            path1 -> {
-                                try {
-                                    return Files.size(path1);
-                                } catch (IOException e) {
-                                    e.printStackTrace();
-                                    return 0;
-                                }
-                            }, (a, b) -> a,
-                            TreeMap::new));
-            for (Path path1 : mapSizeByCompany.keySet()) {
-                
+                            path2 -> getCompanyFromFileName(path2),
+                            Main::getFileSize,
+                            (a, b) -> a,
+                            () -> new TreeMap<>(Comparator.reverseOrder())));
+            for (String company : mapSizeByCompany.keySet()) {
+                System.out.printf("%s:%s%n", company,mapSizeByCompany.get(company));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,5 +73,20 @@ public class Main {
 //                            .replace("purchses-of-", "").
 //                            replace(".csv", "") + " size: " + pathLongEntry.getValue());
 //        }
+    }
+
+    private static String getCompanyFromFileName(Path path) {
+        return path.getFileName().toString()
+                .replace("purchses-of-", "")
+                .replace(".csv", "");
+    }
+
+    private static long getFileSize(Path path) {
+        try {
+            return Files.size(path);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
 }
