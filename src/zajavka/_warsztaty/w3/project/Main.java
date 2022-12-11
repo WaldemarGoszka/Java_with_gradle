@@ -51,7 +51,7 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        try {
+//         try {
 //             Files.list(Paths.get("./src/zajavka/_warsztaty/w3/project/exported/ex2/"))
 //                    .collect(Collectors.toMap((Path p) -> p.getFileName()),
 //                            path1 -> {
