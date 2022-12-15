@@ -46,7 +46,7 @@ public class Main {
                             (a, b) -> a,
                             () -> new TreeMap<>(Comparator.reverseOrder())));
             for (String company : mapSizeByCompany.keySet()) {
-                System.out.printf("%s : %s%n", company,mapSizeByCompany.get(company));
+                System.out.printf("%s  : %s%n", company,mapSizeByCompany.get(company));
             }
         } catch (IOException e) {
             e.printStackTrace();
