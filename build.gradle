@@ -1,0 +1,11 @@
+
+apply plugin: 'java'
+version = '0.1.0'
+sourceCompatibility = '16'
+jar {
+    archivesBaseName = 'myBaseName'
+    manifest {
+        attributes 'Main-Class': 'pl.zajavka._warsztaty.w3.Main'
+        //attributes 'Main-Class': 'pl.zajavka.GradleExamples'
+    }
+}
