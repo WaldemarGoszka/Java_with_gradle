@@ -1,4 +1,4 @@
-package zajavka._warsztaty.w2.FinalProject;
+package pl.zajavka._warsztaty.w2.FinalProject;
 
 import java.math.BigDecimal;
 import java.util.*;

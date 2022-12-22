@@ -1,4 +1,4 @@
-package zajavka._warsztaty.w2.FinalProject;
+package pl.zajavka._warsztaty.w2.FinalProject;
 import java.util.Set;
 public class OrderService {
     private static final Set<String> PAID_STATUSES
