@@ -33,7 +33,7 @@ public class Main {
 //                    .sorted(Comparator.comparing(E2::getFileTime))
 //                    .toList();
         } catch (IOException e) {
-            System.err.println("Error during Files.walk() for path: " + path + ", message: " + e.getMessage());
+            System.err.println("Error during Files.walk() for path:  " + path + ", message: " + e.getMessage());
         }
 //        if (sortedPaths.isEmpty()) {
 //            System.out.println("No files found.");
@@ -55,7 +55,7 @@ public class Main {
         try {
             return Files.getLastModifiedTime(path);
         } catch (IOException e) {
-            System.err.println("Unable to get file time for path: " + path + ", message: " + e.getMessage());
+            System.err.println("Unable to get file time for path:  " + path + ", message: " + e.getMessage());
             return FileTime.fromMillis(0);
         }
     }
