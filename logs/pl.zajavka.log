@@ -1,0 +1,5 @@
+2022-12-28 10:38:37.455 [main] ERROR p.zajavka._warsztaty.w7.logback.Main - logging error in pl.zajavka._warsztaty.w7.logback.Main
+2022-12-28 10:38:37.460 [main] DEBUG p.z._.w7.logback.logger1.Logger1 - logging debug in pl.zajavka._warsztaty.w7.logback.logger1.Logger1
+2022-12-28 10:38:37.460 [main] DEBUG p.z._.w7.logback.logger1.Logger1 - logging debug in pl.zajavka._warsztaty.w7.logback.logger1.Logger1
+2022-12-28 10:38:37.461 [main] INFO  p.z._.w7.logback.logger1.Logger1 - logging info in pl.zajavka._warsztaty.w7.logback.logger1.Logger1
+2022-12-28 10:38:37.461 [main] INFO  p.z._.w7.logback.logger1.Logger1 - logging info in pl.zajavka._warsztaty.w7.logback.logger1.Logger1

@@ -1,11 +1,29 @@
-
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
+group = 'pl.zajavka'
 version = '0.1.0'
 sourceCompatibility = '16'
-jar {
-    archivesBaseName = 'myBaseName'
-    manifest {
-        attributes 'Main-Class': 'pl.zajavka._warsztaty.w3.Main'
-        //attributes 'Main-Class': 'pl.zajavka.GradleExamples'
-    }
+
+repositories {
+    mavenCentral()
+}
+//jar {
+//    archivesBaseName = 'myBaseName'
+//    manifest {
+//        attributes 'Main-Class': 'pl.zajavka._warsztaty.w3.Main'
+//        //attributes 'Main-Class': 'pl.zajavka.GradleExamples'
+//    }
+//}
+dependencies {
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.6'
+//    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.36'
+//    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
+
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+
 }

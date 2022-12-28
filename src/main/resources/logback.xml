@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="HOME_LOG" value="${user.dir}/logs/pl.zajavka.log"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${HOME_LOG}</file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="pl.zajavka._warsztaty.w7.logback.logger1" level="debug" additivity="false">
+        <appender-ref ref="FILE"/>
+
+    </logger>
+
+
+    <logger name="pl.zajavka._warsztaty.w7.logback.logger1" level="debug" additivity="true">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <logger name="pl.zajavka._warsztaty.w7.logback.logger2" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+
+    <root level="error">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+        <!--<configuration>-->
+
+        <!--    <appender name="ZAJAVKA" class="ch.qos.logback.core.ConsoleAppender">-->
+        <!--        <encoder>-->
+        <!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>-->
+        <!--        </encoder>-->
+        <!--    </appender>-->
+
+        <!--    <root level="info">-->
+        <!--        <appender-ref ref="ZAJAVKA"/>-->
+        <!--    </root>-->
+
+        <!--</configuration>-->
