@@ -4,3 +4,6 @@
 ../classes/
 ../../.gradle/
 ../tmp/
+
+../build
+../.gradle/
