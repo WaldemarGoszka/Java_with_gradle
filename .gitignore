@@ -1,0 +1,10 @@
+/.gradle/
+# Default ignored files
+/.idea/shelf/
+/.idea/workspace.xml
+/.idea/classes/
+/.gradle/*
+/tmp/
+
+/build/*
+../.gradle/*

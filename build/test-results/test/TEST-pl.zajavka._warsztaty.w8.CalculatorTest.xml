@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.zajavka._warsztaty.w8.CalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-01T15:16:25" hostname="HPELITEBOOK" time="0.051">
-  <properties/>
-  <testcase name="testSubtract()" classname="pl.zajavka._warsztaty.w8.CalculatorTest" time="0.042"/>
-  <testcase name="testDivide()" classname="pl.zajavka._warsztaty.w8.CalculatorTest" time="0.003"/>
-  <testcase name="testMultiply()" classname="pl.zajavka._warsztaty.w8.CalculatorTest" time="0.003"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
