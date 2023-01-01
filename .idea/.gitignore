@@ -5,5 +5,5 @@
 ../../.gradle/
 ../tmp/
 
-../build/
-../.gradle/
+../build/*
+../.gradle/*
