@@ -4,6 +4,7 @@
 /.idea/workspace.xml
 /.idea/classes/
 /.gradle/*
+/.gradle/**
 /tmp/
 
 /build/*
