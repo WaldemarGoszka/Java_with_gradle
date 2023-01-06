@@ -17,10 +17,31 @@ public class UserManagementService {
         //..
     }
     public Optional<User> findByEmail(String email){
-        //...
+        //ma zwracać optional z userami o podaym emailu
         return Optional.empty();
+
+    }
+    public List<User> findByName(String name){
+        return List.of();
+        //ma zwracać listę userów z tymi samymi name
     }
     public List<User> findAll(){
+        //wraca listę wszystkich userów
         return List.of();
+    }
+
+    public void update(String userEmail, User user) {
+        if(findByEmail(userEmail).isEmpty()){
+            throw new RuntimeException(String.format("User with email: [%s] does't exist", userEmail));
+        }
+
+
+    }
+
+    public void delete(String userEmail) {
+        if(findByEmail(userEmail).isEmpty()){
+            throw new RuntimeException(String.format("User with email: [%s] does't exist", userEmail));
+        }
+
     }
 }
