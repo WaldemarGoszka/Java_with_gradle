@@ -56,9 +56,9 @@ public class UserManagementServiceTest {
         Assertions.assertTrue(result1.isPresent());
         Assertions.assertEquals(user1, result1.get());
         Assertions.assertTrue(result2.isPresent());
-        Assertions.assertEquals(user2, result1.get());
+        Assertions.assertEquals(user2, result2.get());
         Assertions.assertTrue(result3.isPresent());
-        Assertions.assertEquals(user3, result1.get());
+        Assertions.assertEquals(user3, result3.get());
     }
 
     @Test
@@ -116,6 +116,7 @@ public class UserManagementServiceTest {
 
         var all = userManagementService.findAll();
         Assertions.assertEquals(3, all.size());
+
         var result1 = userManagementService.findByEmail(user1.getEmail());
         userManagementService.update(user1.getEmail(), user1.withEmail(newEmail));
         var result2 = userManagementService.findByEmail(user1.getEmail());

@@ -1,39 +1,42 @@
 package pl.zajavka._warsztaty.w8.exercises;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class UserManagementService {
 
-    Map<String,User> userMap = new HashMap<>();
+    private final Map<String,User> userMap = new HashMap<>();
 
     public void create(User user){
-        if(findByEmail(user.getEmail()).isPresent()){
+        if(userMap.containsKey(user.getEmail())){
             throw new RuntimeException(String.format("User with email: [%s] is already created",user.getEmail()));
         }
+        userMap.put(user.getEmail(),user);
 
         //..
     }
     public Optional<User> findByEmail(String email){
-        //ma zwracać optional z userami o podaym emailu
-        return Optional.empty();
-
+        return Optional.ofNullable(userMap.get(email));
     }
     public List<User> findByName(String name){
-        return List.of();
-        //ma zwracać listę userów z tymi samymi name
+         return userMap.values().stream()
+                .filter(v -> v.getName().equals(name))
+                .collect(Collectors.toList());
+
     }
     public List<User> findAll(){
         //wraca listę wszystkich userów
-        return List.of();
+
+        //return userMap.entrySet().stream().map(e -> e.getValue()).collect(Collectors.toList());
+        return new ArrayList<User>(userMap.values());
     }
 
     public void update(String userEmail, User user) {
-        if(findByEmail(userEmail).isEmpty()){
+        if(!userMap.containsKey(userEmail)){
             throw new RuntimeException(String.format("User with email: [%s] does't exist", userEmail));
         }
+        userMap.remove(userEmail);
+        userMap.put(user.getEmail(),user);
 
 
     }
@@ -42,6 +45,7 @@ public class UserManagementService {
         if(findByEmail(userEmail).isEmpty()){
             throw new RuntimeException(String.format("User with email: [%s] does't exist", userEmail));
         }
+        userMap.remove(userEmail);
 
     }
 }
