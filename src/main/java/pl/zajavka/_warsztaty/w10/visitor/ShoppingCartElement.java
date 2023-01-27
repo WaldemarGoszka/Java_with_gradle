@@ -1,5 +1,7 @@
 package pl.zajavka._warsztaty.w10.visitor;
 
-public class ShoppingCartElement {
+import java.math.BigDecimal;
+
+public interface ShoppingCartElement {
     BigDecimal accept(ShoppingCartVisitor visitor);
 }
