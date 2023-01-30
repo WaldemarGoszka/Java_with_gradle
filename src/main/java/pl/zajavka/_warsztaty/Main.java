@@ -6,22 +6,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main implements Interf{
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.removeIf((String s) ->  s.contains("a"));
-
-        String s = "boot.txt";
-        try {
-            Path path = Paths.get(".").toRealPath();
-            Files.list(path)
-                    .filter(x -> x.getFileName().toString().endsWith(".txt"))
-                    .forEach(System.out::println);
-            List<Object> of = List.of();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
+        String s = "Ten test mógłby być trochę trufniejszy";
+      switch (s)
+      {          case "dd" -> "nbs";
+      }
+      }
 
 }
