@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 public class Main implements Interf {
     public static void main(String[] args) {
-        System.out.println("menu4");
+        System.out.println("menu45");
 
     }
 }
