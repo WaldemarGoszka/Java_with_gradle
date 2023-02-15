@@ -13,6 +13,6 @@ public class FilteringBag<T ,U extends Predicate<T>, V extends Predicate<T>> {
     public FilteringBag(V filter1, V filter2) {
         this.filter1 = filter1;
         this.filter2 = filter2;
-        this.filter = filter5;
+        this.filter = filter6;
     }
 }
