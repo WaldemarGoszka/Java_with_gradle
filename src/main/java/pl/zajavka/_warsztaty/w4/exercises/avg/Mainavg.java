@@ -1,4 +1,4 @@
-package zajavka.avg;
+package pl.zajavka._warsztaty.w4.exercises.avg;
 
 import java.util.ArrayList;
 import java.util.List;
