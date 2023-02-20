@@ -37,8 +37,8 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
-        String[] petStrings = { "Bird", "Cat", "Dog", "Rabbit", "Pig" };
-        JComboBox comboBox = new JComboBox(pet Strings);
+        String[] petStrings = { " Bird", "Cat", "Dog", "Rabbit", "Pig" };
+        JComboBox comboBox = new JComboBox(petStrings);
         comboBox.setBounds(149, 99, 155, 20);
         comboBox.setOpaque(false);
         //comboBox.setBackground(new Color(0,0,0,0));
