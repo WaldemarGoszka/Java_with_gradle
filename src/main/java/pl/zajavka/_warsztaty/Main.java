@@ -31,6 +31,7 @@ public class Main {
     }
 
     private void initialize() {
+        String str = "
         frame = new JFrame();
         frame.getContentPane().setBackground(Color.GREEN);
         frame.setBounds(100, 100, 450, 300);
