@@ -7,7 +7,7 @@ public class Main {
         int Counter = 0;
         String LastMarker;
         if ( ++Counter <= Fullcircle  ){
-            LastMarker = "red";
+            LastMarker = " red";
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
