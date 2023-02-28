@@ -11,7 +11,7 @@ public class Main {
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
-            LastMarker = " green";
+            LastMarker = " g reen";
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
