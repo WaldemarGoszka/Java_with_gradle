@@ -19,7 +19,7 @@ public class Main {
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
-            LastMarker = "black";
+            LastMarker = "bl ack";
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
