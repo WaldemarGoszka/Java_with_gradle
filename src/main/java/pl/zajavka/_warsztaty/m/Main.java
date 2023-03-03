@@ -23,7 +23,7 @@ public class Main {
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
-            LastMarker = "yellow";
+            LastMarker = "yell ow";
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
