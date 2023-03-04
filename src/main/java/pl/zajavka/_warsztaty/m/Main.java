@@ -27,7 +27,7 @@ public class Main {
             System.out.println(LastMarker);
         }
         if ( ++Counter <= Fullcircle  ){
-            LastMarker = "brown";
+            LastMarker = "bro wn";
             System.out.println(LastMarker);
         }
     }
