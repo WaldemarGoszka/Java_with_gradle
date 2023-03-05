@@ -2,33 +2,31 @@ package pl.zajavka._warsztaty.m;
 
 public class Main {
     public static void main(String[] args) {
-        int Fullcircle = (100 % 6);
+        //1..2,147,483,647
+        int num = 1376796946;
+        String[] str = Integer.toBinaryString(num).split("");
+        System.out.println(Integer.toBinaryString(num));
+        int count = 0;
+        int max = 0;
+        boolean sFlag = false;
+        boolean fFlag = false;
 
-        int Counter = 0;
-        String LastMarker;
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = " red";
-            System.out.println(LastMarker);
+        for (String s : str) {
+            if(s.equals("1") & !sFlag){
+                sFlag = true;
+            }
+            if(s.equals("0") && sFlag){
+                count++;
+            }
+            if(count > 0 && s.equals("1") && sFlag && !fFlag){
+                if(max < count) {
+                    max = count;
+                }
+                count = 0;
+                //sFlag = false;
+                fFlag = false;
+            }
         }
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = " g reen";
-            System.out.println(LastMarker);
-        }
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = " b lue";
-            System.out.println(LastMarker);
-        }
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = "bl ack";
-            System.out.println(LastMarker);
-        }
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = "yell ow";
-            System.out.println(LastMarker);
-        }
-        if ( ++Counter <= Fullcircle  ){
-            LastMarker = "bro wn";
-            System.out.println(LastMarker);
-        }
+        System.out.println("max: "+ max);
     }
 }
