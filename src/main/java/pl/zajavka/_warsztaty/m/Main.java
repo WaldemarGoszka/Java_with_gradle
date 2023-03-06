@@ -1,32 +1,26 @@
 package pl.zajavka._warsztaty.m;
 
-public class Main {
-    public static void main(String[] args) {
-        //1..2,147,483,647
-        int num = 1376796946;
-        String[] str = Integer.toBinaryString(num).split("");
-        System.out.println(Integer.toBinaryString(num));
-        int count = 0;
-        int max = 0;
-        boolean sFlag = false;
-        boolean fFlag = false;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-        for (String s : str) {
-            if(s.equals("1") & !sFlag){
-                sFlag = true;
-            }
-            if(s.equals("0") && sFlag){
-                count++;
-            }
-            if(count > 0 && s.equals("1") && sFlag && !fFlag){
-                if(max < count) {
-                    max = count;
-                }
-                count = 0;
-                //sFlag = false;
-                fFlag = false;
+public class Main {
+    static public String[] alph = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
+            "o", "p", "q", "r", "s", "t", "u", "w", "v", "x", "y", "z"};
+    public static void main(String[] args) {
+
+
+        System.out.println(check("The quick brown fox jumps over the lazy dog ."));
+    }
+    static public boolean check(String sentence){
+        List<String> listAlphabet= new ArrayList<>(Arrays.asList(alph));
+        for (String s : sentence.toLowerCase().split("")) {
+            if(listAlphabet.contains(s)){
+                listAlphabet.remove(s);
             }
         }
-        System.out.println("max: "+ max);
+        return listAlphabet.isEmpty();
     }
 }
