@@ -16,7 +16,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println(scanner.next());
         System.out.println(scanner.next());
-        System.out.println(scanner.next());
+        System.out.println(scanner.  next());
         System.out.println(scanner.next());
     }
 
